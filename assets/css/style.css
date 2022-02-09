@@ -413,12 +413,20 @@ header{
         align-items: center;
         flex-direction: column;
     }
+    .menu-item .title {
+        width: 184%;
+        text-align: right;
+    }
     .menu-item >div > div > h4 {
-        min-width: 60%;
+        min-width: 24%;
         max-width: 164%;
+        text-align: left;
     }
     .menu-item > div {
         padding: 0 2px;
+    }
+    .dots{
+        width: 100%;
     }
 }
 

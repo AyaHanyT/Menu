@@ -367,7 +367,7 @@ header{
     }
     main {
         background-color: rgba(230,222,214,1);
-        width: 92%;
+        width: 95%;
         margin: auto;
     }
     .navbar {
@@ -412,6 +412,13 @@ header{
         text-align: center;
         align-items: center;
         flex-direction: column;
+    }
+    .menu-item >div > div > h4 {
+        min-width: 60%;
+        max-width: 164%;
+    }
+    .menu-item > div {
+        padding: 0 2px;
     }
 }
 

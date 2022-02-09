@@ -4,7 +4,6 @@
 body {
     overflow-x: hidden;
     font-family: 'Tajawal', sans-serif;
-    background-color: white;
     background-color: rgba(230,222,214,1);
 }
 ::-webkit-scrollbar {
@@ -133,7 +132,7 @@ section {
     z-index: 3;
     margin: auto;
     padding: 0;
-    width: 97%;
+    width: 99%;
     padding: 0.3rem;
 }
 .navbar-brand {
@@ -161,7 +160,9 @@ section {
 }
 .nav-link , navbar .nav-link , .navbar-expand-lg .navbar-nav .nav-link {
     color: #f5f5f5c9;
-    padding: 3px 20px;
+    padding: 0px 9px;
+    font-size: 15px;
+    text-align: center;
 }
 .nav-link:hover, .navbar .nav-link:hover, .navbar-expand-lg .navbar-nav .nav-link:hover{
     color: #F5F5F5;
@@ -429,4 +430,3 @@ header{
         width: 100%;
     }
 }
-

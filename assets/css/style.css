@@ -4,7 +4,7 @@
 body {
     overflow-x: hidden;
     font-family: 'Tajawal', sans-serif;
-    background-color: rgba(230,222,214,1);
+    background-color: rgb(20 20 19);
 }
 ::-webkit-scrollbar {
     width: 7px;
@@ -22,7 +22,7 @@ input, a, button, select, .form-control:focus {
 }
 h3{
     margin: auto;
-    color: #252422;
+    color: beige;
     margin-bottom: 1rem;
     margin-top: 2em;
     width: 75%;
@@ -57,9 +57,9 @@ section {
     width: 220px;
     margin-left: -200px;
     position: fixed;
-    z-index: 999;
+    z-index: 9999;
     top: 0;
-    left: 0;
+    right: 0;
     background-color: #252422f5;
     overflow-x: hidden;
     padding-top: 4vh;
@@ -203,9 +203,10 @@ section {
     padding: 0 1rem;
 }
 .menu-item h4{
-    background-color: #e6ded6;
+    background-color: rgb(20 20 19);
     z-index: 9;
     width: max-content;
+    color: beige;
 }
 .menu-item .title{
     padding-left: 2px;
@@ -223,8 +224,9 @@ section {
 .menu-item p{
     font-weight: 300;
     min-width: 93px;
-    background-color: #e6ded6;
+    background-color: rgb(20 20 19);
     z-index: 9;
+    color: beige;
 }
 .extra{
     display: flex;
@@ -234,7 +236,9 @@ section {
 
 
 
-
+.list-bottom li{
+        color: #e1e1e1;
+}
 
 
 
@@ -318,6 +322,9 @@ footer img{
      .navbar>.container-fluid {
         flex-flow: row;
     }
+    #navbar {
+       direction: ltr;
+    }
     .navbar .navbar-toggler {
      color: #eeeeee;
     border-radius: 50%;
@@ -328,7 +335,7 @@ footer img{
     align-items: center;
     justify-content: center;
     border: none;
-    margin-right: auto;
+    margin-left: auto;
     }
      .navbar .navbar-toggler:focus {
         box-shadow: none;
@@ -379,7 +386,7 @@ header{
         background-color: white;
     }
     main {
-        background-color: rgba(230,222,214,1);
+    background-color: rgb(20 20 19);
         width: 95%;
         margin: auto;
     }
@@ -407,10 +414,36 @@ header{
         margin-top: 1rem;
     }
     .menu-item >div > div > h4 {
-        width: 73%;
+        min-width: 25%;
+        text-align: left;
+        width: max-content;
     }
     .menu-item > div > div {
         height: fit-content;
+    }
+    main{
+       margin-bottom: 5rem;
+    }
+    footer {
+    position: fixed;
+    padding-top: 1rem;
+    bottom: 0;
+    left: 0;
+    z-index: 99;
+    right: 0;
+    }
+    .list-unstyled{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    }
+    .lower-footer {
+    display: none;
+    }
+    footer i {
+    padding: 9px 7px;
+    width: 40px;
+    height: 40px;
     }
     footer li {
     display: flex;
@@ -423,15 +456,21 @@ header{
 
 
 @media screen and (max-width: 450px) {
-       .menu-item >div > div > h4 {
-        width: 83%;
+    .title-outer{
+    background: #e6ded6;
+    z-index: 9;
     }
+.dots {
+    position: absolute;
+    border-bottom: 1px dashed;
+    height: 18px;
+    margin: 0 4px;
+     right: 85px;
+    width: 52%;
+}
 }
 
 @media screen and (max-width: 400px) {
-    .navbar-brand img {
-        width: 105px;
-    }
     .menu-item > div {
         width: 100%;
     }
@@ -447,13 +486,17 @@ header{
     }
     .menu-item >div > div > h4 {
         font-size : 18px;
-    width: max-content;
+        width: max-content;
         min-width: 25%;
     }
     .menu-item > div {
         padding: 0 2px;
     }
+    .menu-item img {
+    height: 180px;
+    }
     .dots{
-        width: 43%;
+        width: 50%;
+        height: 15px;
     }
 }

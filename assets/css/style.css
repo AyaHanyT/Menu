@@ -127,7 +127,7 @@ section {
 }
 #navbar {
     transition: all 0.5s;
-    background-color: #33302c;
+    background-color: #030303;
   }
   .navbar{
     z-index: 3;
@@ -225,7 +225,6 @@ section {
     min-width: 93px;
     background-color: #E1CAB8;
     z-index: 9;
-    color: beige;
 }
 .extra{
     display: flex;
@@ -243,7 +242,7 @@ section {
 
 
 footer{
-    background-color: #2c2924;
+    background-color: #030303;
     padding-top: 1rem;
 }
 footer li a, footer h4{
@@ -449,7 +448,15 @@ header{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-}   
+}
+    .dots {
+    position: absolute;
+    border-bottom: 1px dashed;
+    height: 18px;
+    margin: 0 4px;
+    right: 85px;
+    width: 52%;
+}
 }
 
 
@@ -458,14 +465,7 @@ header{
     background: #e6ded6;
     z-index: 9;
     }
-.dots {
-    position: absolute;
-    border-bottom: 1px dashed;
-    height: 18px;
-    margin: 0 4px;
-     right: 85px;
-    width: 52%;
-}
+
 }
 
 @media screen and (max-width: 400px) {

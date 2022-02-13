@@ -4,7 +4,8 @@
 body {
     overflow-x: hidden;
     font-family: 'Tajawal', sans-serif;
-    background-color: rgb(20 20 19);
+    background-color: #E1CAB8;
+    color: #030303;
 }
 ::-webkit-scrollbar {
     width: 7px;
@@ -22,7 +23,6 @@ input, a, button, select, .form-control:focus {
 }
 h3{
     margin: auto;
-    color: beige;
     margin-bottom: 1rem;
     margin-top: 2em;
     width: 75%;
@@ -203,10 +203,9 @@ section {
     padding: 0 1rem;
 }
 .menu-item h4{
-    background-color: rgb(20 20 19);
+    background-color: #E1CAB8;
     z-index: 9;
     width: max-content;
-    color: beige;
 }
 .menu-item .title{
     padding-left: 2px;
@@ -224,7 +223,7 @@ section {
 .menu-item p{
     font-weight: 300;
     min-width: 93px;
-    background-color: rgb(20 20 19);
+    background-color: #E1CAB8;
     z-index: 9;
     color: beige;
 }
@@ -382,10 +381,10 @@ header{
 
 @media screen and (max-width: 576px){
     body {
-        background-color: white;
+        background-color: #030303;
     }
     main {
-    background-color: rgb(20 20 19);
+    background-color: #E1CAB8;
         width: 95%;
         margin: auto;
     }
